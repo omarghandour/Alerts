@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100svh;
+  background: #252525;
+}
+/* fonts  */
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+/*  */
+
+#root {
+  height: 100svh;
+}
+.Middle {
+  margin-left: 9%;
+  width: 65%;
+  margin-top: 1%;
+  height: 98%;
+  background: transparent;
+  overflow-y: scroll;
+}
+.RSide {
+  width: 24%;
+  margin-top: 1%;
+  height: 93%;
+}
+.RSide,
+.LSide {
+  background-color: black;
+  color: white;
+}
+.navbar .top img {
+  width: 80%;
+}
+.navbar .top {
+  margin-top: 8%;
+  background-color: wheat;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+}
+.app {
+  height: 100%;
+  display: flex;
+}
+
+.navbar:hover {
+  width: 14%;
+}
+.con {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.navbar {
+  position: fixed;
+  height: 100%;
+  background-color: black;
+  transition: width 500ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  width: 6%;
+  background-color: blue !important;
+  z-index: 2;
+}
+.TNav {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 10%;
+}
+.TNav img {
+  width: 5%;
+}
+.TNav h1 {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin: 0;
+  font-size: 50px;
+  cursor: default;
+}
+
+.TNav h1::before {
+  position: absolute;
+  content: "";
+  display: block;
+  z-index: 1;
+  height: 6%;
+  width: 5px;
+  background: #5d9cff;
+  left: 9%;
+  border-radius: 7px;
+}
+.TNav .search {
+  width: 65%;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.TNav .search input {
+  background: #343434;
+  border: none;
+  width: 100%;
+  padding: 15px;
+  border-radius: 7px;
+}
+.TNav .search img {
+  position: absolute;
+  left: 93%;
+  width: 4%;
+}
